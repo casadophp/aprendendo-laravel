@@ -14,4 +14,16 @@ class UsuariosController extends Controller
     {
         return Usuarios::all();
     }
+
+    public function postCriarUsuario()
+    {
+        $dados = Request::all();
+
+        Usuarios::create($dados);
+
+        $usuario = new Usuarios();
+        $usuario->nome = $dados['nome'];
+
+        return 'Usuário criado com sucesso';
+    }
 }
