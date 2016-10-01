@@ -25,5 +25,12 @@ class UsuariosController extends Controller
         $usuario->nome = $dados['nome'];
 
         return 'Usuário criado com sucesso';
-    }
+	}
+
+	public function deleteUsuario()
+	{
+		Usuarios::delete();
+
+		return 'Todos os usuarios removidos com sucesso';
+	}
 }
