@@ -18,6 +18,8 @@ class TabelaUsuarios extends Migration
             `nome` VARCHAR(45) NOT NULL,
             `email` VARCHAR(200) NOT NULL,
             `senha` VARCHAR(255) NOT NULL,
+            `updated_at` DATETIME NULL,
+            `created_at` DATETIME NULL,
             PRIMARY KEY (`id`))
             ENGINE = InnoDB
         ');

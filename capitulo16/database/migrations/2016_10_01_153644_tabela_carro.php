@@ -16,7 +16,6 @@ class TabelaCarro extends Migration
 			$table->integer('id', true);
 			$table->string('descricao');
 			$table->integer('ano');
-            $table->integer('marca_id');
 		});
     }
 

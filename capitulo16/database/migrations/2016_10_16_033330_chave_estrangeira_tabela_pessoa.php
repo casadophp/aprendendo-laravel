@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class TabelaMarca extends Migration
+class ChaveEstrangeiraTabelaPessoa extends Migration
 {
     /**
      * Run the migrations.
@@ -12,10 +12,8 @@ class TabelaMarca extends Migration
      */
     public function up()
     {
-        Schema::create('marca', function(Blueprint $table) {
-            $table->integer('id', true);
-            $table->string('descricao');
-            $table->integer('carro_id');
+        Schema::table('telefone', function(Blueprint $table) {
+            $table->foreign('pessoa_id')->references('id')->on('pessoa');
         });
     }
 
@@ -26,6 +24,8 @@ class TabelaMarca extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('marca');
+        Schema::table('telefone', function(Blueprint $table) {
+            $table->dropForeign('telefone_pessoa_id_foreign');
+        });
     }
 }

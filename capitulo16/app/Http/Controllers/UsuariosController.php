@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Usuarios;
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
+use Request;
 
 class UsuariosController extends Controller
 {
@@ -21,16 +19,31 @@ class UsuariosController extends Controller
 
         Usuarios::create($dados);
 
-        $usuario = new Usuarios();
-        $usuario->nome = $dados['nome'];
+//         $usuario = new Usuarios();
+//         $usuario->nome = $dados['nome'];
+//         $usuario->save();
 
         return 'Usuário criado com sucesso';
 	}
 
-	public function deleteUsuario()
-	{
-		Usuarios::delete();
+	public function deleteRemoverUsuario($id)
+    {
+        $usuario = Usuarios::find($id);
 
-		return 'Todos os usuarios removidos com sucesso';
-	}
+        $usuario->delete();
+
+        return 'Usuário removido com sucesso';
+    }
+
+    public function putAtualizarUsuario($id)
+    {
+        $dados = Request::all();
+        $usuario = Usuarios::find($id);
+
+        $usuario->nome = $dados['nome'];
+        $usuario->email = $dados['email'];
+        $usuario->save();
+
+        return 'Usuário atualizado com sucesso';
+    }
 }

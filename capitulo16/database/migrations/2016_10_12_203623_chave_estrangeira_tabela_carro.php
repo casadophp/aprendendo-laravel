@@ -12,8 +12,8 @@ class ChaveEstrangeiraTabelaCarro extends Migration
      */
     public function up()
     {
-        Schema::table('carro', function(Blueprint $table) {
-            $table->foreign('marca_id')->references('id')->on('marca');
+        Schema::table('marca', function(Blueprint $table) {
+            $table->foreign('carro_id')->references('id')->on('carro');
         });
     }
 
@@ -24,8 +24,8 @@ class ChaveEstrangeiraTabelaCarro extends Migration
      */
     public function down()
     {
-        Schema::table('carro', function(Blueprint $table) {
-            $table->dropForeign('carro_marca_id_foreign');
+        Schema::table('marca', function(Blueprint $table) {
+            $table->dropForeign('marca_carro_id_foreign');
         });
     }
 }

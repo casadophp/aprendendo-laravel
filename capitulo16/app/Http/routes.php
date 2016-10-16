@@ -16,3 +16,16 @@ Route::get('/', function () {
 });
 
 Route::controller('usuarios', 'UsuariosController');
+
+Route::get('relacao-um-para-um', function() {
+    $carro = new \App\Models\Carro([
+        'descricao' => 'Carro muito legal',
+        'ano' => 2000,
+    ]);
+    $carro->save();
+    $carro->marca()->save(
+        new \App\Models\Marca(['descricao' => 'Fiat'])
+    );
+
+    echo "Novo carro e marca criados com sucesso!";
+});
