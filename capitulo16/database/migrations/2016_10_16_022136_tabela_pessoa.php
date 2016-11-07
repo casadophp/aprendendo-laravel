@@ -14,7 +14,7 @@ class TabelaPessoa extends Migration
     {
         Schema::create('pessoa', function (Blueprint $table) {
             $table->integer('id', true);
-            $table->string('descricao');
+            $table->string('nome');
         });
     }
 

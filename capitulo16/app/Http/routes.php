@@ -29,3 +29,15 @@ Route::get('relacao-um-para-um', function() {
 
     echo "Novo carro e marca criados com sucesso!";
 });
+
+Route::get('relacao-um-para-muitos', function() {
+    $pessoa = new \App\Models\Pessoa([
+        'nome' => 'Matheus Marabesi',
+    ]);
+    $pessoa->save();
+    $pessoa->telefones()->save(new \App\Models\Telefone(['telefone' => '11 2875-1293']));
+    $pessoa->telefones()->save(new \App\Models\Telefone(['telefone' => '11 3332-9191']));
+    $pessoa->telefones()->save(new \App\Models\Telefone(['telefone' => '11 2665-0012']));
+
+    echo "Pessoa e telefone criado com sucesso!";
+});
