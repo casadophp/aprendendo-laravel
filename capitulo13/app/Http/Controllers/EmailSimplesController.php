@@ -8,6 +8,17 @@ class EmailSimplesController extends Controller
 {
     public function email()
 	{
-		return 'Email !';
+		if (\Request::isMethod('post')) {
+			$assunto = \Request::input('assunto');
+			$mensagem = \Request::input('mensagem');	
+
+
+			\Mail::raw($mensagem, function($swiftMessage) use ($assunto) {
+				$swiftMessage->subject($assunto);
+				$swiftMessage->to('matheus.marabesi@gmail.com');	
+			});
+		}
+		
+		return view('email_simples');
 	}	
 }
