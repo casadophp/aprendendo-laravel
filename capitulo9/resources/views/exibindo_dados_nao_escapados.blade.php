@@ -1,0 +1,3 @@
+{{ $conteudo }}
+
+{!! $conteudo !!}
