@@ -55,3 +55,7 @@ Route::get('/estrutura-de-repeticao', function () {
         ],
     ]);
 });
+
+Route::get('/include', function () {
+    return view('include');
+});
