@@ -41,6 +41,8 @@ Route::get('/exibir-dados-nao-escapados', function () {
 
 Route::get('/estrutura-de-controle', function () {
     return view('estrutura_de_controle', [
-        'lista' => [],
+        'lista' => [
+            'item1'
+        ],
     ]);
 });
