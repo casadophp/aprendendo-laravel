@@ -46,3 +46,12 @@ Route::get('/estrutura-de-controle', function () {
         ],
     ]);
 });
+
+Route::get('/estrutura-de-repeticao', function () {
+    return view('estrutura_de_repeticao', [
+        'lista' => [
+            'item1',
+            'item2',
+        ],
+    ]);
+});
