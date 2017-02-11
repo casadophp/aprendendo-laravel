@@ -59,3 +59,7 @@ Route::get('/estrutura-de-repeticao', function () {
 Route::get('/include', function () {
     return view('include');
 });
+
+Route::get('/comentarios', function() {
+    return view('comentarios');
+});
