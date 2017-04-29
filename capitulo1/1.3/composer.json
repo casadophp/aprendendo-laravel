@@ -1,0 +1,13 @@
+{
+  "name": "Livro Laravel",
+  "description": "Livro de Laravel",
+  "authors": [
+    {
+      "name": "Laravel",
+      "email": "laravel@livrolaravel.com.br"
+    }
+  ],
+  "require": {
+    "mpdf/mpdf": "^6.1"
+  }
+}
