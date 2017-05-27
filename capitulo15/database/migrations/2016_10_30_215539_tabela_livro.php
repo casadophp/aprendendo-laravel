@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Pessoa extends Migration
+class TabelaLivro extends Migration
 {
     /**
      * Run the migrations.
