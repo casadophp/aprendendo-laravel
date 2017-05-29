@@ -15,4 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/livro', 'LivroValidatorController@salvar');
+
+Route::get('/livro', function() {
+    return view('livro_formulario');
+});
+
+Route::post('/livro', 'LivroValidatorController@salvar');
