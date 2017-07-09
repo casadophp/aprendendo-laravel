@@ -14,7 +14,7 @@ class EmailAnexoController extends Controller
             \Mail::raw($mensagem, function($swiftMessage) use ($assunto) {
                 $swiftMessage->subject($assunto);
                 $swiftMessage->to('matheus.marabesi@gmail.com');
-                $swiftMessage->attach();
+                $swiftMessage->attach(app_path('Http/Controllers/EmailAnexoController.php'));
             });
 
             return 'E-mail enviado com sucesso!';

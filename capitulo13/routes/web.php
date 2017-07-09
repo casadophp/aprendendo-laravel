@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::match(['GET', 'POST'], '/email/simples', 'EmailSimplesController@email');
 
 Route::match(['GET', 'POST'], '/email/anexo', 'EmailAnexoController@email');
+
+Route::get('/email/layout', function() {
+    return view('email_layout');
+});
