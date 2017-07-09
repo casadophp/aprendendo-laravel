@@ -18,6 +18,6 @@ class Usuarios extends Model
 
     public function permissoes()
     {
-        return $this->belongsToMany(Permissoes::class, '');
+        return $this->belongsToMany(Permissoes::class, 'usuarios_permissoes');
     }
 }
