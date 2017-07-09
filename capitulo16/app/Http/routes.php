@@ -47,3 +47,7 @@ Route::get('relacao-muitos-para-muitos', function() {
     return $usuario->permissoes;
 });
 
+Route::get('relacao-muitos-para-muitos-inverso', function() {
+    $permissoes = \App\Models\Permissoes::find(1);
+    return $permissoes->usuarios;
+});

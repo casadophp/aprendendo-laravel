@@ -29,3 +29,43 @@ E por último acessar os exemplos do capítulo através do navegador, que nesse 
 ```
 firefox http://localhost:8000
 ```
+
+Obs: Se estiver usando o homestead, não esqueça de redirecionar as portas desejadas no arquivo de configuração `Homestead.yml`, caso contrário, não será possível acessar a aplicação no navegador
+
+# Conteúdo do Livro (Índice)
+
+- Capítulo 1
+  - Introdução
+- Capítulo 2
+  - Introdução ao ambiente Laravel (não possui código)
+- Capítulo 3
+  - Rotas
+- Capítulo 4
+  - Arquitetura Laravel
+- Capítulo 5
+  - Middlewares
+- Capítulo 6
+  - Controladores (Controllers)
+- Capítulo 7
+  - Respostas HTTP (Não possuí codigo)
+- Capítulo 8 
+  - Views
+- Capítulo 9
+  - Recursos de layout
+- Capítulo 10
+  - Elixir
+- Capítulo 11
+  - Cache
+- Capítulo 12
+  - Validações
+- Capítulo 13
+  - Enviando emails
+- Capítulo 14
+  - Configurando banco de dados
+- Capítulo 15
+  - Migrações
+- Capítulo 16
+  - Eloquent ORM
+- Capítulo 17
+  - Autenticação
+
