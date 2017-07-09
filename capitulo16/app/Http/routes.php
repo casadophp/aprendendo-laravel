@@ -41,3 +41,8 @@ Route::get('relacao-um-para-muitos', function() {
 
     echo "Pessoa e telefone criado com sucesso!";
 });
+
+Route::get('relacao-muitos-para-muitos', function() {
+    $usuario = \App\Models\Usuarios::find(1);
+    dd($usuario->permissoes);
+});
