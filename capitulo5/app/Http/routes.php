@@ -14,5 +14,5 @@
 Route::get('/', ['uses' => 'ConteudoController@index', 'middleware' => ['web', 'auth']])->name('index');
 Route::auth();
 
-Route::get('/contato', ['uses' => 'contatoController@contato']);
-Route::post('/enviar-contato', ['uses' => 'contatoController@enviarContato']);
+Route::get('/contato', ['uses' => 'ContatoController@contato']);
+Route::post('/enviar-contato', ['uses' => 'ContatoController@enviarContato']);
