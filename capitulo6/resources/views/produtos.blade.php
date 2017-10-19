@@ -71,14 +71,11 @@
                               </div>
                               <div class="col-md-6 col-xs-6 price">
                                  <h3>
-                                    <label style="color: #f4645f;">
-                                       R$ 649,99</
-                                       label>
+                                    <label style="color: #f4645f;">R$ 649,99</label>
                                  </h3>
                               </div>
                            </div>
-                           <p>Melhor mouse para Game Laravel 1 - <strong>8GB</
-                           strong></p>
+                           <p>Melhor mouse para Game Laravel 1 - <strong>8GB</strong></p>
                            <p>
                            <label style="color: #f4645f;">Quantidade:</label>
                            <input type="number" name="quantidade[]" value="0" />
@@ -112,9 +109,7 @@
                               </div>
                               <div class="col-md-6 col-xs-6 price">
                                  <h3>
-                                    <label style="color: #f4645f;">
-                                       R$ 749,99</
-                                       label>
+                                    <label style="color: #f4645f;">R$ 749,99</label>
                                  </h3>
                               </div>
                            </div>
