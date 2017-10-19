@@ -61,8 +61,7 @@
                   </div>
                   <div class="col-sm-6 col-md-4">
                      <div class="thumbnail">
-                        <h4 class="text-center"><span class="label label-
-                           info">Laravel 1</span></h4>
+                        <h4 class="text-center"><span class="label label-info">Laravel 1</span></h4>
                         <img src="http://assets.razerzone.com/eeimages/products/13785/razer-naga-2014-right-03.png" class="img-responsive">
                         <div class="caption">
                            <div class="row">
@@ -88,9 +87,8 @@
                               </div>
                               <div class="col-md-6">
                                  <a href="#" onClick="document.
-                                    getElementById('produtos').submit();" class="btn btn-success btn-product"><span
-                                    class="glyphicon glyphicon-shopping-
-                                    cart"></span> Comprar</a>
+                                    getElementById('produtos').submit();" class="btn btn-success btn-product">
+                                    <span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
                               </div>
                            </div>
                            <p></p>
@@ -99,8 +97,7 @@
                   </div>
                   <div class="col-sm-6 col-md-4">
                      <div class="thumbnail">
-                        <h4 class="text-center"><span class="label label-
-                           info">Laravel 2</span></h4>
+                        <h4 class="text-center"><span class="label label-info">Laravel 2</span></h4>
                         <img src="http://assets.razerzone.com/eeimages/products/13785/razer-naga-2014-right-03.png" class="img-responsive">
                         <div class="caption">
                            <div class="row">
@@ -125,7 +122,8 @@
                                  </a>
                               </div>
                               <div class="col-md-6">
-                                 <a href="#" onClick="document.getElementById('produtos').submit();" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
+                                 <a href="#" onClick="document.getElementById('produtos').submit();" class="btn btn-success btn-product">
+                                 <span class="glyphicon glyphicon-shopping-cart"></span> Comprar</a>
                               </div>
                            </div>
                            <p></p>
