@@ -1,4 +1,6 @@
-# Laravel em ação - Novatec
+# Aprendendo Laravel - Novatec
+
+![Capa do livro Aprendendo Laravel](https://s3.novatec.com.br/capas/9788575226285.jpg)
 
 Repositório dedicado exclusivamente para os exemplos desenvolvidos no livro. Para cada capítulo existe uma pasta correspondente com um projeto Laravel completo.
 
